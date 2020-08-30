@@ -1,9 +1,10 @@
 let idNewImg = "hhh";
-let idDiv = "hh";
+let idDiv = ""; 
 let srcImg = "";
 
-function generateScreen(id, idTxt, inpValue)
+function generateScreen(id, idDivF, idTxt, inpValue)
 {
+	idDiv = idDivF;
 	document.getElementById(idTxt).innerHTML = inpValue;
 	html2canvas(document.querySelector(id)).then(canvas =>
 	{
